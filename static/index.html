@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>육하원칙 요약기</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="history">
+      <h2>히스토리</h2>
+      <ul id="history-list"></ul>
+    </aside>
+
+    <main class="content">
+      <h1>대화 내역 육하원칙 요약기</h1>
+
+      <textarea id="input" maxlength="1000"
+        placeholder="채팅 대화 내역을 붙여넣으세요. (Enter: 요약, Shift+Enter: 줄바꿈)"></textarea>
+      <div class="controls">
+        <span id="count">0 / 1000</span>
+        <button id="submit-btn" type="button">요약</button>
+      </div>
+      <p id="status"></p>
+
+      <section id="original-box" hidden>
+        <h2>원문</h2>
+        <pre id="original"></pre>
+      </section>
+
+      <section class="cards">
+        <div class="card"><h3>누가</h3><p id="r-who">-</p></div>
+        <div class="card"><h3>언제</h3><p id="r-when">-</p></div>
+        <div class="card"><h3>어디서</h3><p id="r-where">-</p></div>
+        <div class="card"><h3>무엇을</h3><p id="r-what">-</p></div>
+        <div class="card"><h3>어떻게</h3><p id="r-how">-</p></div>
+        <div class="card"><h3>왜</h3><p id="r-why">-</p></div>
+      </section>
+    </main>
+  </div>
+  <script src="/static/app.js"></script>
+</body>
+</html>
